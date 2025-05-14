@@ -1,0 +1,76 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#header-fox {
+  max-width: 300px;
+}
+
+#card-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 250px;
+  border: 1px solid black;
+}
+
+.image-card {
+  max-width: 250px;
+}
+
+.species-name {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-wiki-icon {
+  max-width: 30px;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+footer {
+  display: flex;
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+.contacts{
+  display: flex;
+  gap: 15px;
+}
+
+#footer-fox {
+  max-width: 400px;
+}
