@@ -16,26 +16,26 @@ header {
 }
 
 #card-head {
-  max-width: 900px;
-  max-height: 200px;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 900px;
+  max-height: 200px;
+  background-color: white;
 }
 
-#about-info{
+#about-info {
   display: flex;
   flex-direction: column;
   padding: 40px;
 }
 
-h1{
+h1 {
   font-size: 35px;
   font-weight: bold;
 }
 
-#about-info p{
+#about-info p {
   text-align: start;
   font-size: 20px;
 }
@@ -62,7 +62,7 @@ h2 {
   text-align: center;
 }
 
-main h2{
+main h2 {
   text-align: start;
   padding-left: 20px;
 }
@@ -174,10 +174,17 @@ main h2{
   max-width: 300px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+@media (min-width: 600px) and (max-width: 880px){
+  #card-head {
+    max-height: 300px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   #vertical {
-    display: block; /* Usamos block para que ocupe el ancho */
-    width: 100%; /* Que ocupe todo el ancho del contenedor */
+    display: block;
+    width: 100%;
     height: auto;
   }
 
@@ -188,11 +195,11 @@ main h2{
   #card-head {
     flex-direction: column;
     padding: 0;
-    max-height: none; /* Evita que se corte en vertical */
+    max-height: none;
   }
 
   .header-fox {
-    max-width: 100%; /* Para que la imagen no se desborde */
+    max-width: 100%;
   }
 
   #about-info {
@@ -200,7 +207,7 @@ main h2{
     text-align: center;
   }
 
-  main h2{
+  main h2 {
     text-align: center;
   }
 }
