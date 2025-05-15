@@ -8,8 +8,36 @@ body {
 
 header {
   background-color: #ffa07a;
-  padding: 1rem;
+  padding: 100px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-head {
+  max-width: 900px;
+  max-height: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-info{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+h1{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#about-info p{
+  text-align: start;
+  font-size: 20px;
 }
 
 .header-fox {
@@ -34,6 +62,11 @@ h2 {
   text-align: center;
 }
 
+main h2{
+  text-align: start;
+  padding-left: 20px;
+}
+
 #cards {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +78,6 @@ h2 {
 .card {
   background-color: #ffffff;
   border: 1px solid #a9ba9d;
-  border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 280px;
   overflow: hidden;
@@ -70,6 +102,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 16px;
   font-weight: bold;
   color: #8b4513;
 }
@@ -100,7 +133,6 @@ h2 {
   align-items: center;
   background-color: white;
   padding: 2rem;
-  border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   gap: 60px;
   max-width: 900px;
@@ -113,20 +145,20 @@ h2 {
 
 .contact-info h3 {
   color: #8b4513;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   font-size: 1.8rem;
 }
 
 .contact-info p {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   color: #2f2f2f;
 }
 
 .contacts {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 1rem;
+  gap: 20px;
 }
 
 .contact-icon {
@@ -140,16 +172,35 @@ h2 {
 
 #footer-fox {
   max-width: 300px;
-  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 @media screen and (max-width: 600px) {
   #vertical {
-    display: inline-flex;
+    display: block; /* Usamos block para que ocupe el ancho */
+    width: 100%; /* Que ocupe todo el ancho del contenedor */
+    height: auto;
   }
 
-  #square{
+  #square {
     display: none;
+  }
+
+  #card-head {
+    flex-direction: column;
+    padding: 0;
+    max-height: none; /* Evita que se corte en vertical */
+  }
+
+  .header-fox {
+    max-width: 100%; /* Para que la imagen no se desborde */
+  }
+
+  #about-info {
+    padding: 20px;
+    text-align: center;
+  }
+
+  main h2{
+    text-align: center;
   }
 }
